@@ -1,0 +1,65 @@
+The file SCC.txt contains the edges of a directed graph. Vertices are labeled as positive integers from 1 to 875714. Every row indicates an edge, the vertex label in first column is the tail and the vertex label in second column is the head (recall the graph is directed, and the edges are directed from the first column vertex to the second column vertex). So for example, the 11th11^{th}11th row looks liks : "2 47646". This just means that the vertex with label 2 has an outgoing edge to the vertex with label 47646
+
+Your task is to code up the algorithm from the video lectures for computing strongly connected components (SCCs), and to run this algorithm on the given graph.
+
+Output Format: You should output the sizes of the 5 largest SCCs in the given graph, in decreasing order of sizes, separated by commas (avoid any spaces). So if your algorithm computes the sizes of the five largest SCCs to be 500, 400, 300, 200 and 100, then your answer should be "500,400,300,200,100" (without the quotes). If your algorithm finds less than 5 SCCs, then write 0 for the remaining terms. Thus, if your algorithm computes only 3 SCCs whose sizes are 400, 300, and 100, then your answer should be "400,300,100,0,0" (without the quotes). (Note also that your answer should not have any spaces in it.)
+
+WARNING: This is the most challenging programming assignment of the course. Because of the size of the graph you may have to manage memory carefully. The best way to do this depends on your programming language and environment, and we strongly suggest that you exchange tips for doing this on the discussion forums.
+
+
+632725,320,95,71,68
+incorrect (my initial result, submitted)
+
+434821, 968, 459, 313, 211
+incorrect (my next result, not submitted, also reported by lots of others)
+
+494642,313,177,162,152
+incorrect (just taken from the forum to record here as an incorrect result)
+
+23094, 704, 323, 293, 227
+incorrect (just taken from the forum to record here as an incorrect result)
+
+
+
+434821 <- supposedly the biggest one in the answer
+434821,971,459,313,304 <- three supposedly correct
+434821,968,459,314,211 <- four are supposedly correct, with the 4th wrong
+
+also, folks are saying the files vary, so download, run, to get answer for the file that I used!!!
+
+
+============================
+
+SCC.txt
+cmd 875714 SCC.txt
+
+SCCExample.txt
+cmd 9 SCCExample.txt
+expect 3,3,3,0,0
+
+SCCExample1.txt
+cmd 9 SCCExample1.txt
+expect 3,3,3,0,0
+
+SCCExample2.txt
+cmd 8 SCCExample2.txt
+expect 3,3,2,0,0
+
+SCCExample3.txt
+cmd 8 SCCExample3.txt
+expect 3,3,1,1,0
+
+SCCExample4.txt
+cmd 8 SCCExample4.txt
+expect 7,1,0,0,0
+
+SCCExample5.txt
+cmd 12 SCCExample5.txt
+expect 6,3,2,1,0
+
+SCCExample6.txt
+cmd 5 SCCExample6.txt
+expect 3,1,1,0,0
+
+
+https://github.com/beaunus/stanford-algs
